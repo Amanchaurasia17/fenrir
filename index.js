@@ -46,8 +46,8 @@ const makeCommit = async n => {
     if (n === 0) return simpleGit().push();
 
     // Generate a random date between June 1, 2024, and July 31, 2024
-    const startDate = moment('2025-03-20'); // June 1, 2024
-    const endDate = moment('2025-03-30'); // July 31, 2024
+    const startDate = moment('2025-04-30'); // June 1, 2024
+    const endDate = moment('2025-06-03'); // July 31, 2024
     const daysRange = endDate.diff(startDate, 'days'); // Total days in range
 
     const randomDays = randomInt(0, daysRange)(); // Random number of days to add
